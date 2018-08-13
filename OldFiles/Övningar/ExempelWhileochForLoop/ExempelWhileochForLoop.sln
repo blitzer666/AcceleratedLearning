@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExempelWhileochForLoop", "ExempelWhileochForLoop\ExempelWhileochForLoop.csproj", "{4E17DE67-DBFD-4951-A267-B811B16F6DF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E17DE67-DBFD-4951-A267-B811B16F6DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E17DE67-DBFD-4951-A267-B811B16F6DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E17DE67-DBFD-4951-A267-B811B16F6DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E17DE67-DBFD-4951-A267-B811B16F6DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D867C014-644A-4216-8056-03C1BCEFFFD7}
+	EndGlobalSection
+EndGlobal
