@@ -12,8 +12,9 @@ namespace CheckpointPart2
         {
             Console.Write("Enter numbers separated with spaces ");
             string userInput = Console.ReadLine();
-            char[] whitespace = new char[] { ' ', '\t' };
-            string[] storeUserInput = userInput.Split(whitespace);
+            //char[] whitespace = new char[] { ' ', '\t' };
+            string[] storeUserInput = userInput.Split(' ');//fungerade med mellanslag
+                                                            //mellan ' ' istället för white...
 
 
             foreach (string item in storeUserInput)
@@ -30,7 +31,8 @@ namespace CheckpointPart2
                     Console.WriteLine("O");
                    
                 }
-                Console.WriteLine();
+                Console.WriteLine(); //Måste vara längst ner 
+                                     //för att få mellanrum på rätt ställe...
             }
         }
     }

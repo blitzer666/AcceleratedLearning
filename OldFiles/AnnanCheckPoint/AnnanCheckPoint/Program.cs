@@ -22,10 +22,13 @@ namespace AnnanCheckPoint
 
 
                 for (int i = 0; i < numberUserInput; i++)
+              //for (int i = 0; i < userNumber; i++)
+
                 {
 
 
                     for (int j = 0; j < i; j++)
+                  //for (int j = 0; j < userNumber; j++)
                     {
                         Console.Write("*");
 

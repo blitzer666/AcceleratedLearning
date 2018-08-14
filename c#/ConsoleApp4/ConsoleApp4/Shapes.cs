@@ -1,11 +1,11 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ovning_7._1
-
+namespace ConsoleApp1
 {
     abstract class Shape
     {
@@ -51,37 +51,3 @@ namespace Ovning_7._1
         }
     }
 }
-//{
-//    class Shapes
-//    {
-
-//    }
-
-
-//    class MyTriangle : Shapes
-//    {
-//        public int RectangleSide1 { get; set; }
-//        public int RectangleSide2 { get; set; }
-
-//    }
-
-//    class MyCircles : Shapes
-//    {
-//        public int radius { get; set; }
-//        public int area { get; set; }
-
-//    }
-
-//    class MyRectangle : Shapes
-//    {
-//        public int RectangleSide1 { get; set; }
-//        public int RectangleSide2 { get; set; }
-
-//    }
-
-//    class Square : Shapes
-//    {
-
-//    }
-//}
-
