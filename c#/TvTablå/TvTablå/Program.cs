@@ -18,18 +18,19 @@ namespace TvTablå
     {
         static void Main(string[] args)
         {
-            var allLines = File.ReadAllLines("tv-data.txt");
+            string[] allLines = File.ReadAllLines("tv-data.txt");
 
             var allShows = new List<Show>();
+            
 
             foreach (var line in allLines)
             {
-                var splittedLine = line.Split('*');
+                var splittedLine = line.Split('<');
                 var channel = splittedLine[0];
                 var time = splittedLine[1];
                 var title = splittedLine[2];
 
-                var show = new Show();
+                Show show = new Show();
                 show.Title = title;
                 show.Channel = channel;
                 show.StartAt = TimeSpan.Parse(time);
@@ -37,6 +38,7 @@ namespace TvTablå
                 allShows.Add(show);
 
             }
+            
             Header ("ALLA TITLAR");
 
             

@@ -13,7 +13,7 @@ namespace Ovning_3._4_foreach
             Console.WriteLine("name1");
             string myString1 = Console.ReadLine();
 
-            string[] names = new string [nameCount];
+            string[] names [nameCount];
 
             
             

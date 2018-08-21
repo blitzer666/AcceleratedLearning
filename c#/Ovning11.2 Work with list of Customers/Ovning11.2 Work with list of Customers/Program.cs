@@ -10,12 +10,7 @@ namespace Ovning11._2_Work_with_list_of_Customers
     class Program
     {
 
-        enum Gender
-        {
-            Male,
-            Female,
-            Other
-        }
+
         static void Main(string[] args)
         {
             var allLines = File.ReadAllLines("PeopleInformation.txt");
@@ -37,8 +32,16 @@ namespace Ovning11._2_Work_with_list_of_Customers
                 customer.FirstName = firstName;
                 customer.Lastname = lastName;
                 customer.MailAdress = mail;
-                customer.Gender = gender;
+               
                 customer.Age = age;
+
+                Customer Thomas = new Customer();
+
+                Type _gender = Male;
+                if (Enum.TryParse<Type>(gender,out _gender))
+                {
+                    customer.Gender = _gender;
+                }
 
                 allCustomers.Add(customer);
 

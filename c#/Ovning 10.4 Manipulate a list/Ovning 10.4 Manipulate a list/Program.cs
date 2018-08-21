@@ -31,6 +31,7 @@ namespace Ovning_10._4_Manipulate_a_list
                     Console.WriteLine("Name " + value);
                 }
                 Console.ReadLine();
+            }
                     
 
         }
