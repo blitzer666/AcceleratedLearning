@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44EBF98B-2B55-4147-BFA5-D8E8F3767BBF}</ProjectGuid>
+    <ProjectGuid>{76E6E48F-2AFA-4185-AE08-0B9258629623}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ovning_12._2_Custom_interfaces</RootNamespace>
-    <AssemblyName>Ovning 12.2 Custom interfaces</AssemblyName>
+    <RootNamespace>Panda_Fibonacci_numbers</RootNamespace>
+    <AssemblyName>Panda Fibonacci numbers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cat.cs" />
-    <Compile Include="Dog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

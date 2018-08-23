@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{44EBF98B-2B55-4147-BFA5-D8E8F3767BBF}</ProjectGuid>
+    <ProjectGuid>{53A1A315-6927-4277-9DAF-7F678D7E5E5F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ovning_12._2_Custom_interfaces</RootNamespace>
-    <AssemblyName>Ovning 12.2 Custom interfaces</AssemblyName>
+    <RootNamespace>Panda3</RootNamespace>
+    <AssemblyName>Panda3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cat.cs" />
-    <Compile Include="Dog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
