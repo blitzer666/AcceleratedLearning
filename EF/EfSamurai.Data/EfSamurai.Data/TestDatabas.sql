@@ -1,1 +1,1 @@
-﻿select * from Samurais
+﻿select * from HairStyles

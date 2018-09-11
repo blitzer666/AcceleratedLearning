@@ -8,6 +8,6 @@ namespace EfSamurai.Domain
 {
     public enum HairStyle
     {
-      Chonmage, oicho, Western  
+        Chonmage, Oicho, Western
     }
 }

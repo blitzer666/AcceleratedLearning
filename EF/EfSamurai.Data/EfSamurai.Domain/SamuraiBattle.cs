@@ -13,6 +13,5 @@ namespace EfSamurai.Domain
 
         public Battle Battle { get; set; }
         public int BattleId { get; set; }
-
     }
 }

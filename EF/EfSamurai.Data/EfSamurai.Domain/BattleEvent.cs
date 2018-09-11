@@ -16,6 +16,5 @@ namespace EfSamurai.Domain
         public BattleLog BattleLog { get; set; }
         public int BattleLogId { get; set; }
 
-
     }
 }
