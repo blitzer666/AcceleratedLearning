@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ÖVAÖVAÖVA
+{
+    class Ovning2
+    {
+        static void Main(string[] args)
+        {
+
+            Console.Write("Enter fruit 1: ");
+            string fruit1 = Console.ReadLine();
+            Console.Write("Enter fruit 2: ");
+            string fruit2 = Console.ReadLine();
+            Console.Write("Enter fruit 3: ");
+            string fruit3 = Console.ReadLine();
+
+            Console.ForegroundColor=ConsoleColor.Green;
+
+            //string result = string.Format("You entered three fruits: {0}, {1}, {2}!",
+            //fruit1,
+            //fruit2,
+            //fruit3);
+
+            //Console.WriteLine(result); //Utskriftssätt 1
+
+            //Console.WriteLine("You entered three fruits: " + fruit1 +", " + fruit2 + ", " + fruit3 + "!"); // Utskriftssätt 2
+
+            
+
+            string message1 = "You entered three fruits: " + fruit1 +", " + fruit2 + ", " + fruit3 + "!";  // concatenation
+            string message2 = string.Format("You entered three fruits: {0}, {1}, {2}!", fruit1, fruit2, fruit3);  // placeholders
+            string message3 = $"You entered three fruits: {fruit1}, {fruit2}, {fruit3}!"; // interpolated
+
+            Console.WriteLine(message1);
+            Console.WriteLine(message2);
+            Console.WriteLine(message3);
+
+
+            StringBuilder builder = new StringBuilder();
+            //Append to Stringbuilder
+            for (int i = 0; i < 10; i++)
+            {
+                builder.Append(i).Append(" ");
+            }
+            Console.WriteLine(builder);
+
+
+
+
+
+
+        }
+    }
+}

@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ÖVAÖVAÖVA
+{
+    class Ovning2
+    {
+	        public static void YourInfo()
+        {
+
+            Console.WriteLine("What is your name? ");
+            string name = Console.ReadLine();
+
+            try
+            {
+                Console.WriteLine("How old are you? ");
+                int age = int.Parse(Console.ReadLine());
+
+
+
+                Console.WriteLine("What is your favorite character? ");
+                char character = char.Parse(Console.ReadLine());
+
+                int untilRetirement = 65 - age;
+                bool userlikesNumbers = char.IsNumber(character);
+
+                Console.ForegroundColor = ConsoleColor.Green;
+
+                Console.WriteLine("Your name is " + name);
+                Console.WriteLine("You have " + untilRetirement + " years left until retirement");
+
+                if (userlikesNumbers)
+                    Console.WriteLine(" You like numbers!");
+                else
+                    Console.WriteLine("you dont like numbers!");
+                Console.ResetColor();
+
+                Console.ReadLine();
+
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Please use numbers!");
+                YourInfo();
+
+
+            }
+        }
+    }
+}

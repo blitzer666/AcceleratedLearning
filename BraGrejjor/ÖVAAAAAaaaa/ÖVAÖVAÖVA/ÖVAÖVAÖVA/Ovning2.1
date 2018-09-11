@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ÖVAÖVAÖVA
+{
+    class Ovning2
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("What is your name? ");
+            string name = Console.ReadLine();
+            Console.WriteLine("How old are you? ");
+            string age = Console.ReadLine();
+            Console.WriteLine("Whats your favorite letter? ");
+            string favoriteLetter = Console.ReadLine();
+            Console.WriteLine("Whats your favorite animal? ");
+            string favoriteAnimal = Console.ReadLine();
+            Console.WriteLine("What day is it? ");
+            string day = Console.ReadLine();
+
+            Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.WriteLine("Your name is " + name);
+            Console.WriteLine("You are " + age);
+            Console.WriteLine("Your favorite letter is " +favoriteLetter);
+            Console.WriteLine("Your favorite animal is " + favoriteAnimal);
+            Console.WriteLine("Today its " + day);
+
+            Console.ResetColor();
+            Console.WriteLine();
+        }
+    }
+}
