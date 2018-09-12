@@ -3,14 +3,16 @@ using EfCowboy.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EfCowboy.Data.Migrations
 {
     [DbContext(typeof(CowboyContext))]
-    partial class CowboyContextModelSnapshot : ModelSnapshot
+    [Migration("20180912091259_migration4")]
+    partial class migration4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,37 +52,11 @@ namespace EfCowboy.Data.Migrations
                     b.ToTable("Quote");
                 });
 
-            modelBuilder.Entity("EfCowboy.Domain.SecretIdentity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("CowboyId");
-
-                    b.Property<string>("RealName");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CowboyId")
-                        .IsUnique();
-
-                    b.ToTable("SecretIdentity");
-                });
-
             modelBuilder.Entity("EfCowboy.Domain.Quote", b =>
                 {
                     b.HasOne("EfCowboy.Domain.Cowboy", "Cowboy")
                         .WithMany("Quotes")
                         .HasForeignKey("CowboyId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("EfCowboy.Domain.SecretIdentity", b =>
-                {
-                    b.HasOne("EfCowboy.Domain.Cowboy", "Cowboy")
-                        .WithOne("SecretIdentity")
-                        .HasForeignKey("EfCowboy.Domain.SecretIdentity", "CowboyId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
