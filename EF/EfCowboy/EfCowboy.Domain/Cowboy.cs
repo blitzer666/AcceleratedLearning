@@ -1,8 +1,12 @@
 ﻿using System;
 
+
 namespace EfCowboy.Domain
 {
-    public class Class1
+    public class Cowboy
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+
     }
 }
