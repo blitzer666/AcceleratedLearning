@@ -20,8 +20,8 @@ namespace EfSamurai.App
         private static void Main(string[] args)
         {
             // ----- Init logger ----------------------------------------------
-            ch.Init();
-            _context.GetService<ILoggerFactory>().AddProvider(new MyLoggerProvider());
+            ////ch.Init();
+            ////_context.GetService<ILoggerFactory>().AddProvider(new MyLoggerProvider());
 
             // ----- Clear database -------------------------------------------
 
@@ -42,7 +42,7 @@ namespace EfSamurai.App
 
             // ----- Clear ----------------------------------------------------
 
-            ch.Clear();
+            ////ch.Clear();
 
             // ----- Queries --------------------------------------------------
 

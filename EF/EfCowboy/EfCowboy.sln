@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCowboy.Data", "EfCowboy.Data\EfCowboy.Data.csproj", "{DE80B156-95E2-466B-B04F-756CB110BCA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCowboy.Domain", "EfCowboy.Domain\EfCowboy.Domain.csproj", "{DA7E6C74-9FA6-4AD2-A942-759E0419EF77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE80B156-95E2-466B-B04F-756CB110BCA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE80B156-95E2-466B-B04F-756CB110BCA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE80B156-95E2-466B-B04F-756CB110BCA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE80B156-95E2-466B-B04F-756CB110BCA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA7E6C74-9FA6-4AD2-A942-759E0419EF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA7E6C74-9FA6-4AD2-A942-759E0419EF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA7E6C74-9FA6-4AD2-A942-759E0419EF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA7E6C74-9FA6-4AD2-A942-759E0419EF77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {039A508F-4005-4226-A8B7-34C4EC87F317}
+	EndGlobalSection
+EndGlobal
