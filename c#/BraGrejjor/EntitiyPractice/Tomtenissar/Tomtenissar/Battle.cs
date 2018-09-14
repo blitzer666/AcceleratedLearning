@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EfCowboy.Domain
+namespace Tomtenissar
 {
     public class Battle
     {
@@ -14,6 +14,8 @@ namespace EfCowboy.Domain
         public bool IsBrutal { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+        public BattleLog BattleLog { get; set; }
+
 
     }
 }

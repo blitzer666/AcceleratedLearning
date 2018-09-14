@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EfCowboy.Data.Migrations
 {
     [DbContext(typeof(CowboyContext))]
-    [Migration("20180912094027_migration6")]
+    [Migration("20180912095500_migration6")]
     partial class migration6
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
