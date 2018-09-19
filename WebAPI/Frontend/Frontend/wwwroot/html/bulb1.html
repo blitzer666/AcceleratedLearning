@@ -1,0 +1,46 @@
+﻿
+
+<meta charset="utf-8" />
+
+
+<style>
+    img {
+        width: 150px;
+    }
+
+    .mybulbs {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: grid
+    }
+
+    .button {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: grid
+    }
+
+    #lights1, #lights2 {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: grid
+    }
+</style>
+
+
+<button id="lampknapp1">Light Bulb</button><br />
+<img id="lights1" src="pics/offLight.jpg" />
+
+
+
+<script>
+
+
+
+    let lampknapp1 = document.getElementById("lampknapp1");
+    let mybulbs1 = document.getElementById("lights1");
+
+    lampknapp1.addEventListener("click", () => {
+        mybulbs1.src = "pics/light-bulb-.jpg"
+    })
+
+
+
+</script>

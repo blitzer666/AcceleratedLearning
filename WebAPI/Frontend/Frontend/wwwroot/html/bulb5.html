@@ -1,0 +1,156 @@
+﻿
+
+<meta charset="utf-8" />
+
+
+
+<style>
+    img {
+        width: 150px;
+    }
+
+    .mybulbs {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: grid
+    }
+
+    /*button*/ {
+        background-color: Green;
+        border: none;
+        color: white;
+        padding: 20px 170px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    #lights1, #lights2, #lights3 {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: inline-block
+    }
+</style>
+
+
+
+
+
+<button id="lampknapp1">Toggle Bulb 1</button><br />
+<button id="lampknapp2">Toggle Bulb 2</button><br />
+<button id="lampknapp3">Toggle Bulb 3</button><br />
+
+
+<img id="lights1" src="pics/offLight.jpg" />
+<img id="lights2" src="pics/offLight.jpg" />
+<img id="lights3" src="pics/offLight.jpg" />
+
+
+<!--<div class="mybulbs">
+
+    <div id="x">
+        <img src="guide-glass-lightbulb.jpg">
+    </div>
+    <div id="x2">
+        <img src="guide-glass-lightbulb.jpg">
+    </div>
+
+</div>
+<div id="x3">
+    <img src="guide-glass-lightbulb.jpg">
+</div>-->
+
+
+
+
+
+<script>
+
+
+
+    let lampknapp1 = document.getElementById("lampknapp1");
+    //let lampknapp2 = document.getElementById("lampknapp2");
+    //let lampknapp3 = document.getElementById("lampknapp3");
+
+    let mybulbs1 = document.getElementById("lights1");
+    let mybulbs2 = document.getElementById("lights2");
+    let mybulbs3 = document.getElementById("lights3");
+
+    let switch1 = false;
+
+    lampknapp1.addEventListener("click", () => {
+
+        // Byt värdet på "switch1" 
+
+        if (switch1 == true) {
+            switch1 = false;
+        } else {
+            switch1 = true;
+        }
+
+        console.log("switch1", switch1)
+
+        // Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
+
+        if (switch1 == true) {
+            mybulbs1.src = "pics/light-bulb-.jpg"
+        } 
+
+        if (switch1 == false) {
+            mybulbs1.src = "pics/offLight.jpg"
+        } 
+
+        //
+    })
+
+    let switch2 = false;
+
+    lampknapp2.addEventListener("click", () => {
+
+        if (switch2 == true) {
+            switch2 = false;
+        } else {
+            switch2 = true;
+        }
+
+        console.log("switch2", switch2)
+
+        // Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
+
+        if (switch2 == true) {
+            mybulbs2.src = "pics/light-bulb-.jpg"
+        }
+
+        if (switch2 == false) {
+            mybulbs2.src = "pics/offLight.jpg"
+        }
+
+        
+    })
+   
+    
+    let switch3 = false;
+
+    lampknapp3.addEventListener("click", () => {
+
+        if (switch3 == true) {
+            switch3 = false;
+        } else {
+            switch3 = true;
+        }
+
+        console.log("switch3", switch3)
+
+        // Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
+
+        if (switch3 == true) {
+            mybulbs3.src = "pics/light-bulb-.jpg"
+        }
+
+        if (switch3 == false) {
+            mybulbs3.src = "pics/offLight.jpg"
+        }
+
+        //
+    })
+
+</script>

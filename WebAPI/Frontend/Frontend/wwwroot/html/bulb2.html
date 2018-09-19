@@ -1,0 +1,112 @@
+﻿
+
+<meta charset="utf-8" />
+
+
+
+<style>
+    img {
+        width: 150px;
+    }
+
+    .mybulbs {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: grid
+    }
+
+    .button {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: grid;
+        
+            
+    }
+
+    #lights1, #lights2, #lights3 {
+        grid-template-columns: 25% 25% 25% 25%;
+        display: inline-block
+    }
+</style>
+
+
+<button id="lampknapp1">Light Bulb</button><br />
+<button id="lampknapp2">Light Bulb</button><br />
+<button id="lampknapp3">Light Bulb</button><br />
+<!--<button id="lampknapp3">Light Bulb</button><br />-->
+<img id="lights1" src="pics/offLight.jpg" />
+<img id="lights2" src="pics/offLight.jpg" />
+<img id="lights3" src="pics/offLight.jpg" />
+
+
+<!--<div class="mybulbs">
+
+    <div id="x">
+        <img src="guide-glass-lightbulb.jpg">
+    </div>
+    <div id="x2">
+        <img src="guide-glass-lightbulb.jpg">
+    </div>
+
+</div>
+<div id="x3">
+    <img src="guide-glass-lightbulb.jpg">
+</div>-->
+
+
+
+
+
+<script>
+
+
+
+    let lampknapp1 = document.getElementById("lampknapp1");
+    let lampknapp2 = document.getElementById("lampknapp2");
+    let lampknapp3 = document.getElementById("lampknapp3");
+
+    let mybulbs1 = document.getElementById("lights1");
+    let mybulbs2 = document.getElementById("lights2");
+    let mybulbs3 = document.getElementById("lights3");
+
+    lampknapp1.addEventListener("click", () => {
+        mybulbs1.src = "pics/light-bulb-.jpg"
+    })
+
+    lampknapp2.addEventListener("click", () => {
+        mybulbs2.src = "pics/light-bulb-.jpg"
+    })
+    lampknapp3.addEventListener("click", () => {
+        mybulbs3.src = "pics/light-bulb-.jpg"
+    })
+
+    //function tändalampan() {
+    //    //  alert("tändlampa")
+    //    document.getElementById("x").innerHTML = '<img src="light-bulb-.jpg" >'
+
+    //}
+    //lampknapp.addEventListener("click", tändalampan);
+
+
+
+    //let lampknapp2 = document.getElementById("lampknapp2");
+
+    //function tändalampan2() {
+    //    //  alert("tändlampa")
+    //    document.getElementById("x2").innerHTML = '<img src="light-bulb-.jpg" >'
+
+    //}
+    //lampknapp2.addEventListener("click", tändalampan);
+
+
+
+    //let lampknapp3 = document.getElementById("lampknapp");
+
+    //function tändalampan3() {
+    //    //  alert("tändlampa")
+    //    document.getElementById("x3").innerHTML = '<img src="light-bulb-.jpg" >'
+
+    //}
+    //lampknapp3.addEventListener("click", tändalampan);
+
+
+
+</script>
