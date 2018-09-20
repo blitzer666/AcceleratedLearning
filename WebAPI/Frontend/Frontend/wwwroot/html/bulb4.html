@@ -57,17 +57,18 @@
         switch4 = true,
         switch5 = false;
     
-    
+    while (condition) {
 
     lampknapp1.addEventListener("click", () => {
 
         // Byt värdet på "switch1" 
+       
 
-        if (switch1 == true) {
-            switch1 = false;
-        } else {
-            switch1 = true;
-        }
+        //if (switch1 == true) {
+        //    switch1 = false;
+        //} else {
+        //    switch1 = true;
+        //}
 
         console.log("switch1", switch1)
 
@@ -79,40 +80,13 @@
         } 
 
         if (switch1 == false) {
-            mybulbs1.src = "pics/offLight.jpg"
+            mybulbs2.src = "pics/offLight.jpg"
             
-        } 
+        }
+       
     })
 
 
-
-        lampknapp1.addEventListener("click", () => {
-
-            // Byt värdet på "switch1" 
-
-            if (switch1 == true) {
-                switch2 = false;
-
-            } else {
-                switch2 = true;
-            }
-
-            console.log("switch2", switch2)
-
-            // Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
-
-            if (switch2 == true) {
-                mybulbs2.src = "pics/light-bulb-.jpg"
-
-            }
-
-            if (switch2 == false) {
-                mybulbs2.src = "pics/offLight.jpg"
-
-            } 
-
-     
-    })
     //lampknapp1.addEventListener("click", () => {
 
     //    // Byt värdet på "switch1" 
