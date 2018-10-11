@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>bulb4</title>
+</head>
+<style>
+    button, img {
+        display: block;
+        float: left
+    }
+
+    button {
+        padding: 20px;
+        margin: 90px;
+    }
+
+    img {
+        width: 15%;
+        height: 15%;
+    }
+
+    text {
+        color: white;
+        padding: 20px;
+        margin: 90px;
+    }
+</style>
+
+<body style="background-color:black">
+
+    <div style="overflow:auto">
+        <button id="knappA">Light bulb!</button>
+
+    </div>
+
+    <div id="lightOff1">
+        <img src=pics/offLight.jpg />
+    </div>
+
+    <div id="lightOff2">
+        <img src=pics/offLight.jpg />
+    </div>
+
+    <div id="lightOff3">
+        <img src=pics/offLight.jpg />
+    </div>
+
+    <div id="lightOff4">
+        <img src=pics/offLight.jpg />
+    </div>
+
+    <div id="lightOff5">
+        <img src=pics/offLight.jpg />
+    </div>
+
+    <text id="numberOfBulb">
+
+    </text>
+
+    <script>
+
+        let knappA = document.getElementById("knappA");
+        let lightOff1 = document.getElementById("lightOff1");
+        let lightOff2 = document.getElementById("lightOff2");
+        let lightOff3 = document.getElementById("lightOff3");
+        let lightOff4 = document.getElementById("lightOff4");
+        let lightOff5 = document.getElementById("lightOff5");
+        let numberOfBulb = document.getElementById("numberOfBulb");
+
+        let count = 1;
+        knappA.addEventListener("click", () => {
+
+            if (count === 1) {
+                lightOff5.innerHTML = '<img src="pics/offLight.jpg" />'
+                lightOff1.innerHTML = '<img src="pics/onLight.jpg" />'
+                numberOfBulb.innerHTML = "Current bulb: 1";
+                count = 2;
+            }
+            else if (count === 2) {
+                lightOff1.innerHTML = '<img src="pics/offLight.jpg" />'
+
+                lightOff2.innerHTML = '<img src="pics/onLight.jpg" />'
+                numberOfBulb.innerHTML = "Current bulb: 2";
+                count = 3;
+            }
+            else if (count === 3) {
+                lightOff2.innerHTML = '<img src="pics/offLight.jpg" />'
+
+                lightOff3.innerHTML = '<img src="pics/onLight.jpg" />'
+                numberOfBulb.innerHTML = "Current bulb: 3";
+                count = 4;
+            }
+            else if (count === 4) {
+                lightOff3.innerHTML = '<img src="pics/offLight.jpg" />'
+
+                lightOff4.innerHTML = '<img src="pics/onLight.jpg" />'
+                numberOfBulb.innerHTML = "Current bulb: 4";
+                count = 5;
+            }
+            else if (count === 5) {
+                lightOff4.innerHTML = '<img src="pics/offLight.jpg" />'
+
+                lightOff5.innerHTML = '<img src="pics/onLight.jpg" />'
+                numberOfBulb.innerHTML = "Current bulb: 5";
+                count = 1;
+            }
+        });
+
+
+
+    </script>
+
+</body>
+</html>

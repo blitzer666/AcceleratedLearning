@@ -1,0 +1,8 @@
+﻿img {
+    width: 120px;
+    margin-right: 50px;
+    cursor: crosshair;
+    user-select: none;
+    display: block;
+    float: left
+}

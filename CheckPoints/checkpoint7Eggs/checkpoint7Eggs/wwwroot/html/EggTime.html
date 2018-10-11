@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <div id="firstEgg">
+    </div>
+    <div id="secondEgg">
+    </div>
+    <div id="thirdEgg">
+    </div>
+
+
+
+    <script>
+
+        firstEgg.innerHTML = "<img src='egg1-closed.png' />"
+        secondEgg.innerHTML = "<img src='egg1-closed.png' />"
+        thirdEgg.innerHTML = "<img src='egg1-closed.png' />"
+
+        let counter1 = 0;
+        firstEgg.addEventListener("click", () => {
+            counter1++
+            if (counter1 == 1)
+                firstEgg.innerHTML = "<img src='egg2-open.png' />"
+            if (counter1 == 2)
+                firstEgg.innerHTML = "<img src='egg3-double.png' />"
+            if (counter1 == 3) {
+                firstEgg.innerHTML = "<img src='egg1-closed.png' />"
+                counter1 = 0
+
+            }
+        })
+        let counter2 = 0;
+        secondEgg.addEventListener("click", () => {
+            counter2++
+            if (counter2 == 1)
+                secondEgg.innerHTML = "<img src='egg2-open.png' />"
+            if (counter2 == 2)
+                secondEgg.innerHTML = "<img src='egg3-double.png' />"
+            if (counter2 == 3) {
+                secondEgg.innerHTML = "<img src='egg1-closed.png' />"
+                counter2 = 0
+
+            }
+        })
+        let counter3 = 0;
+        thirdEgg.addEventListener("click", () => {
+            counter3++
+            if (counter3 == 1)
+                thirdEgg.innerHTML = "<img src='egg2-open.png' />"
+            if (counter3 == 2)
+                thirdEgg.innerHTML = "<img src='egg3-double.png' />"
+            if (counter3 == 3) {
+                thirdEgg.innerHTML = "<img src='egg1-closed.png' />"
+                counter3 = 0
+
+            }
+        })
+
+    </script>
+</body>
+
+</html>

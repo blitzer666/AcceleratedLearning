@@ -1,0 +1,13 @@
+URL to your site (on smarterasp.net):
+http://blitzer666-001-site1.ftempurl.com/animal/count.html
+
+Database server name (on smarterasp.net):
+sql6006.site4now.net
+
+Username to log in to your database (on smarterasp.net):
+DB_A4175E_animalfarmDatabase_admin
+
+Password to your database (on smarterasp.net):
+animal001 
+
+

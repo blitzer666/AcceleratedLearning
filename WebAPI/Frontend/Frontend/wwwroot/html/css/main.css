@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
     margin: 0
 }
 
@@ -72,13 +71,18 @@ img {
 }
 
 .bulb {
-    width: 30%;
+    width: 20%;
     margin-bottom: 15px;
 }
 
 .bulb-smaller {
     width: 10%;
     margin-bottom: 15px;
+}
+
+.button-smaller {
+    display: inline;
+    width: 10%;
 }
 
 .response {

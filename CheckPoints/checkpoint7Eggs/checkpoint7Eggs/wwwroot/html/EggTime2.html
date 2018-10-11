@@ -1,0 +1,45 @@
+﻿<html>
+<head>
+    <title>Nivå2</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <div id="firstEgg">
+    </div>
+
+    <script>
+
+        //firstEgg.innerHTML = "<img src='egg1-closed.png' />"
+        sourceImage = new Image();
+        sourceImage.src = "egg1-closed.png";
+
+        //function cloneImageA() {
+        //    imageA = new Image();
+        //    imageA.src = egg1 - closed.png;
+        //    document.getElementById("content").appendChild(imageA);
+        //}
+
+        function cloneImageB() {
+            imageB = sourceImage.cloneNode(true);
+            document.getElementById("content").appendChild(imageB);
+        }
+
+        Image()
+        "<img src='egg1-closed.png' />" + "<img src='egg1-closed.png' />"
+        //function cloneImageC() {
+        //    var HTML = '<img src="' + sourceImage.src + '" alt="" />';
+        //    document.getElementById("content").innerHTML += HTML;
+        //}
+    </script>
+</head>
+<body>
+    <div id="controle">
+       
+        <!--<button onclick="cloneImageA();">Clone method A</button>-->
+        <button onclick="cloneImageB();">"<img src='egg1-closed.png'/></button>
+        <!--<button onclick="cloneImageC();">Clone method C</button>-->
+    </div>
+    <div id="content">
+        Images:<br>
+    </div>
+</body>

@@ -1,180 +1,51 @@
-﻿
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body class="page-black">
 
-<meta charset="utf-8" />
-
-
-
-<style>
-    img {
-        width: 150px;
-    }
-
-    .mybulbs {
-        grid-template-columns: 25% 25% 25% 25%;
-        display: grid
-    }
-
-    .button {
-        grid-template-columns: 25% 25% 25% 25%;
-        display: grid;
-    }
-
-    #lights1, #lights2, #lights3 #lights4, #lights5{
-        grid-template-columns: 25% 25% 25% 25%;
-        display: inline-block
-    }
-</style>
-
-
-<button id="lampknapp1">Light Bulb</button><br />
-
-
-<img id="lights1" src="pics/offLight.jpg" />
-<img id="lights2" src="pics/offLight.jpg" />
-<img id="lights3" src="pics/offLight.jpg" />
-<img id="lights4" src="pics/offLight.jpg" />
-<img id="lights5" src="pics/offLight.jpg" />
-
-
-
-
-<script>
-
-
-
-    let lampknapp1 = document.getElementById("lampknapp1");
-
-
-    let mybulbs1 = document.getElementById("lights1");
-    let mybulbs2 = document.getElementById("lights2");
-    let mybulbs3 = document.getElementById("lights3");
-    let mybulbs4 = document.getElementById("lights4");
-    let mybulbs5 = document.getElementById("lights5");
-
-    let switch1 = false,
-        switch2 = true,
-        switch3 = false,
-        switch4 = true,
-        switch5 = false;
-    
-    while (condition) {
-
-    lampknapp1.addEventListener("click", () => {
-
-        // Byt värdet på "switch1" 
-       
-
-        //if (switch1 == true) {
-        //    switch1 = false;
-        //} else {
-        //    switch1 = true;
-        //}
-
-        console.log("switch1", switch1)
-
-        // Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
-
-        if (switch1 == true) {
-            mybulbs1.src = "pics/light-bulb-.jpg"
-            
-        } 
-
-        if (switch1 == false) {
-            mybulbs2.src = "pics/offLight.jpg"
-            
+    <div class="playground playground-black">
+        <button id="lightButton1">Press me</button>
+        <img id="bulb1" src="pics/offLight.jpg" class="bulb-smaller" />
+        <img id="bulb2" src="pics/offLight.jpg" class="bulb-smaller" />
+        <img id="bulb3" src="pics/offLight.jpg" class="bulb-smaller" />
+        <img id="bulb4" src="pics/offLight.jpg" class="bulb-smaller" />
+        <img id="bulb5" src="pics/offLight.jpg" class="bulb-smaller" />
+        <div id="response" class="response-white">
+        </div>
+    </div>
+    <script>
+        let bulbNumber = 1;
+        let bulbOffImage = "pics/offLight.jpg";
+        let bulbOnImage = "pics/onLight.jpg";
+        function turnAllBulbsOff() {
+            document.getElementById("bulb1").src = bulbOffImage;
+            document.getElementById("bulb2").src = bulbOffImage;
+            document.getElementById("bulb3").src = bulbOffImage;
+            document.getElementById("bulb4").src = bulbOffImage;
+            document.getElementById("bulb5").src = bulbOffImage;
         }
-       
-    })
+        function turnOnBulb(index) {
+            document.getElementById("bulb" + index).src = bulbOnImage;
+        }
+        function writeTheValueOfbulbNumber() {
+            var stuff = "Current bulb: " + bulbNumber
+            document.getElementById("response").innerText = stuff;
+        }
+        function redraw() {
+            turnAllBulbsOff()
+            writeTheValueOfbulbNumber()
+            turnOnBulb(bulbNumber);
+        }
+        function moveLightFromLeftToRight() {
+            bulbNumber = bulbNumber + 1
+            if (bulbNumber > 5) bulbNumber = 1
+            redraw();
+        }
+        document.getElementById("lightButton1").addEventListener("click", moveLightFromLeftToRight);
 
-
-    //lampknapp1.addEventListener("click", () => {
-
-    //    // Byt värdet på "switch1" 
-
-    //    if (switch2 == true) {
-    //        switch3 = false;
-    //    } else {
-    //        switch3 = true;
-    //    }
-
-    //    console.log("switch3", switch3)
-
-    //    // Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
-
-    //    if (switch3 == true) {
-    //        mybulbs3.src = "pics/light-bulb-.jpg"
-
-    //    }
-
-    //    if (switch3 == false) {
-    //        mybulbs3.src = "pics/offLight.jpg"
-
-    //    }
-
-
-    //})
-
-    //let switch2 = true;
-    
-
-
-    //lampknapp1.addEventListener("click", () => {
-
-    //     Byt värdet på "switch1" 
-
-    //    if (switch2 == true) {
-    //        switch2 = false;
-    //    } else {
-    //        switch2 = true;
-    //    }
-
-    //    console.log("switch2", switch2)
-
-    //     Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
-
-    //    if (switch2 == true) {
-    //        mybulbs2.src = "pics/light-bulb-.jpg"
-           
-    //    }
-
-    //    if (switch2 == false) {
-    //        mybulbs2.src = "pics/offLight.jpg"
-    //        mybulbs3.src = "pics/light-bulb-.jpg"
-    //    } 
-    //})
-    //let switch3 = true;
-
-
-
-    //lampknapp1.addEventListener("click", () => {
-
-    //    // Byt värdet på "switch1" 
-
-    //    if (switch3 == false) {
-    //        switch3 = true;
-    //    } else {
-    //        switch3 = false;
-    //    }
-
-    //    console.log("switch3", switch3)
-
-    //    // Rita upp en tänd eller släkt lampa beroende på värdet av "switch"
-
-    //    if (switch1 == true) {
-    //        mybulbs3.src = "pics/light-bulb-.jpg"
-            
-    //    }
-
-    //    if (switch1 == false) {
-    //        mybulbs3.src = "pics/offLight.jpg"
-    //    }
-
-    //})
-
-
-
-
-
-
-
-</script>
+        redraw();
+    </script>
+</body>
+</html>

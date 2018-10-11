@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>demo4</title>
+    <link href="/css/products.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div id="app">
+        <h3>Varukorg</h3>
+        <div class="products" v-for="product in products">
+
+            <input type="number" v-model.number="product.quantity" >
+            <button @click="increase(product)">+</button>
+            <button @click="decrease(product)">-</button>    
+            <b>{{product.name}}</b>
+            <div style="text-align: left"></div>
+            <div v-if="product.quantity===0">noll</div>
+
+
+
+         
+        </div>
+        <div>Antal produkter: {{totalProducts}}</div>
+
+
+    </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>
+

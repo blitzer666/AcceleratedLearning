@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <h2></h2>
+    <p id="weekday"></p>
+
+    <script>
+
+        var GetWeekDays = function (format) {
+            var weekDays = {};
+
+            var curDate = new Date();
+            for (var i = 0; i < 7; ++i) {
+                weekDays[curDate.getDay()] = curDate.toLocaleDateString('ru-RU', {
+                    weekday: format ? format : 'short'
+                });
+
+                curDate.setDate(curDate.getDate() + 1);
+            }
+
+            return weekDays;
+        };
+        
+
+        me.GetMonthNames = function (format) {
+            var monthNames = {};
+
+            var curDate = new Date();
+            for (var i = 0; i < 12; ++i) {
+                monthNames[curDate.getMonth()] = curDate.toLocaleDateString('ru-RU', {
+                    month: format ? format : 'long'
+                });
+
+                curDate.setMonth(curDate.getMonth() + 1);
+            }
+
+            return monthNames;
+        };
+        
+
+        //Date.prototype.getWeekDay = function () {
+        //    var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        //    return weekday[this.getDay()];
+        }
+        //var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        //var day = days[now.getDay()];
+        //document.getElementById("weekday").innerHTML = d;
+    </script>
+
+    <!--<p id="demo"></p>
+
+    <script>
+
+        GetWeekDay()
+        
+
+        
+
+
+
+    </script>-->
+
+</body>
+</html>
