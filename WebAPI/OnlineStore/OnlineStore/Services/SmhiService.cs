@@ -34,7 +34,7 @@ namespace OnlineStore.Services
             }
         }
 
-        public List<TimeTemp> FilterTemperature(RootObject result, DateTime date)
+        public List<TimeTemp> FilterTemperature(Rootobject result, DateTime date)
         {
             return result.timeSeries.Where(x => x.validTime.Day == date.Day).Select(x => new TimeTemp
             {

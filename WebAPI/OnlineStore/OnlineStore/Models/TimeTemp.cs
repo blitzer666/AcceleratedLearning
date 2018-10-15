@@ -9,7 +9,7 @@ namespace OnlineStore.Models
     public class TimeTemp
     {
         public DateTime Time { get; set; }
-        public int Temp { get; set; }
+        public double Temp { get; set; }
 
     }
 }

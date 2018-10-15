@@ -1,0 +1,7 @@
+Dokumentation av API'et
+
+https://developers.trello.com/v1.0/reference#api-key-tokens
+
+Hämta key och token:
+
+https://trello.com/app-key

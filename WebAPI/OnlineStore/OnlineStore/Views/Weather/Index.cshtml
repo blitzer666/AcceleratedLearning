@@ -24,6 +24,12 @@
             </div>
 
         </form>
+
+        @if (Model.ErrorMessage != null)
+        {
+            <div class="alert alert-danger">Fel: @Model.ErrorMessage</div>
+        }
+
         @if (Model.TimeTemps != null)
         {
             <h3>@Model.TimeTemps.Count</h3>

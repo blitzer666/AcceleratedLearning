@@ -23,12 +23,23 @@ namespace OnlineStore.Controllers
         }
         public IActionResult GetWeather(WeatherViewModel vm)
         {
-            var smhiService = new SmhiService();
+ 
 
-            Rootobject result = smhiService.GetMeteorologicalForecast(vm.Longitude, vm.Latitude);
-            vm.TimeTemps = smhiService.FilterTemperature(result, DateTime.Now);
+     
 
+            try
+            {
+                var smhiService = new SmhiService();
+
+                Rootobject result = smhiService.GetMeteorologicalForecast(vm.Longitude, vm.Latitude);
+                vm.TimeTemps = smhiService.FilterTemperature(result, DateTime.Now);
+            }
+            catch (Exception ex)
+            {
+                vm.ErrorMessage = ex.Message;
+            }
             return View("Index", vm);
+
             //string result = smhiService.GetMeteorologicalForecast(vm.Longitude, vm.Latitude);
             //vm.TimeTemps = new List<TimeTemp>();
 
