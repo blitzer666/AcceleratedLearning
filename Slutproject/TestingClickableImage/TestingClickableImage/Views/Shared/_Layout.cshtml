@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - TestingClickableImage</title>
+    <title>@ViewData["Title"] - Dissent</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,35 +17,44 @@
     </environment>
 </head>
 <body>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header" style="color:black;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">TestingClickableImage</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="brand">
+                    <img src="~/images/DissentLoggoNavbar.png" height="60" width="120">
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index"><spam></spam></a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="SecondHome" asp-action="Index">Second</a></li>
+                    <li><a asp-area="" asp-controller="Tweet" asp-action="Index">tweet</a></li>
+                    <li><a asp-area="" asp-controller="StreamTweet" asp-action="Index">Streamtweet</a></li>
                 </ul>
             </div>
         </div>
+
     </nav>
+    </div>
 
     <partial name="_CookieConsentPartial" />
 
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; 2018 - TestingClickableImage</p>
-        </footer>
+        @*<footer>
+                <p>&copy; 2018 - Dissent</p>
+            </footer>*@
     </div>
 
     <environment include="Development">
